@@ -161,7 +161,7 @@ while control == True:
             print("modo no valido")
 
 
-# Programa con listas y diccionarios
+# Programa con listas y diccionarios 
 
 control = True
 
