@@ -83,9 +83,18 @@ while contr:
             print("Puede usar estos datos en la simulación seleccionando una aeronave.")
         case "0":
             print("Regresando")
-            contr = False
+            break
+            
         case _:
-            print("modo no valido")
-
+            print("Modo no valido")
 
             
+
+
+
+case "4":
+                    print("Ejecución lista (Resultados)")
+                    if resultados:
+                        print("Velocidad de perdida, velocidad actual, margen de seguridad")
+                        for r in resultados:
+                            print(f"| {r[0]:} | {r[1]} | {r[2]}")

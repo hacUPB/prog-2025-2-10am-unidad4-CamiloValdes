@@ -32,7 +32,7 @@ Adicionalmente se agregó una nueva opción llamada "aeronaves" para que el usua
 |margen_list      |Salida  |Lista de márgenes de seguridad para estadísticas                           |
 
 
-
+## Codigo primera edición
 ``` python
 contr = True
 while contr:
