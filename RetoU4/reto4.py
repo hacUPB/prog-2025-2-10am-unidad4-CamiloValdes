@@ -162,7 +162,7 @@ while control == True:
 
 
 # Programa con listas y diccionarios 
-
+'''
 control = True
 
 # Diccionario para guardar parámetros de cada simulador
@@ -352,3 +352,4 @@ while control:
             break
         case _:
             print("modo no valido")
+'''
