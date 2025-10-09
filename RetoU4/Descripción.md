@@ -3,37 +3,30 @@ De nuestro codigo usaremos el caso 110 , que tiene que ver con velocidad de perd
 ## Listas
 Las listas las usaremos para ver (Imprimir en pantalla los resultados )las condiciones de la aeronave durante diferemntes intervalos durante el vuelo. Tambien con base en las listas se realizaran varias operaciones matematicas (estadisticas) usando los datos que conforman dicha lista. 
 ## Diccionarios
-
 Usaremos un diccionario para dar al usuario opciones de aeronaves con las cuales quiera realizar la similación, cada aeronave tiene sus condiciones diferentes (como por ejemplo superficie alar). Pusimos el diccionario en el incio del codigo para que desde el principio del codigo el usuario tenga la posibilidad de escoger. 
 
+Adicionalmente se agregó una nueva opción llamada "aeronaves" para que el usuario pueda ver las opciones de aeronaves que tiene
+
 ## Tabla de variables del codigo
-|Variable|Tipo|Comentario|
-|--------|----|----------|
-|w|Entrada|Peso total de la aeronave|
-|s|Entrada|Area total de las alas del avión|
-|c|Entrada|Coeficiente de sustentación segun perfil|
-|d|Entrada|Densidad del aire por el que se está desplazando la aeronave|
-|v_stal|Salida|Calculo del Stall de la aeronave en ese momento|
-|v_actual|Entrada|Velocidad actual de la aeronave|
 
 |Variable         |Tipo    |Comentario                                                                 |
 |-----------------|--------|--------------------------------------------------------------------------|
-|contr            |Control |Variable booleana para controlar el ciclo principal del programa           |
-|aeronaves        |Control |Diccionario con datos de aeronaves disponibles para simulación             |
-|opcio            |Entrada |Opción seleccionada en el menú principal                                   |
-|seleccion        |Entrada |Número de aeronave seleccionada por el usuario                             |
-|nombre_aeronave  |Control |Nombre de la aeronave seleccionada                                         |
-|datos_aeronave   |Control |Diccionario con los datos de la aeronave seleccionada                      |
-|w                |Entrada |Peso total de la aeronave (puede venir del diccionario o ingresarse manual)|
-|s                |Entrada |Área total de las alas del avión (puede venir del diccionario o manual)    |
-|c                |Entrada |Coeficiente de sustentación según perfil                                   |
-|d                |Entrada |Densidad del aire por el que se está desplazando la aeronave               |
-|v_stall          |Salida  |Resultado intermedio para calcular la velocidad de pérdida                  |
-|v_stal           |Salida  |Velocidad de pérdida calculada                                             |
-|v_actual         |Entrada |Velocidad actual de la aeronave                                            |
-|margen_seguridad |Salida  |Diferencia entre velocidad actual y velocidad de pérdida                   |
-|resultados       |Salida  |Lista que almacena [v_stal, v_actual, margen_seguridad] de cada iteración  |
-|conta            |Control |Contador de iteraciones en la simulación                                   |
+|contr            |Control |Variable que controlar el ciclo principal |
+|aeronaves        |Control |Diccionario con datos de aeronaves   |
+|opcio            |Entrada |Opción que se selecciona en el menú principal     |
+|seleccion        |Entrada |Número de aeronave seleccionada por el usuario     |
+|nombre_aeronave  |Control |Nombre de la aeronave seleccionada  |
+|datos_aeronave   |Control |Diccionario con los datos de la aeronave seleccionada|
+|w                |Entrada |Peso total de la aeronave |
+|s                |Entrada |Área total de las alas del avión |
+|c                |Entrada |Coeficiente de sustentación según perfil |
+|d                |Entrada |Densidad del aire por el que se está desplazando la aeronave |
+|v_stall          |Salida  |Resultado intermedio para calcular la velocidad de pérdida |
+|v_stal           |Salida  |Velocidad de pérdida calculada |
+|v_actual         |Entrada |Velocidad actual de la aeronave |
+|margen_seguridad |Salida  |Diferencia entre velocidad actual y velocidad de pérdida |
+|resultados       |Salida  |Lista que almacena variables de cada iteración |
+|conta            |Control |Contador de iteraciones en la simulación |
 |v_stal_list      |Salida  |Lista de velocidades de pérdida para estadísticas                          |
 |v_actual_list    |Salida  |Lista de velocidades actuales para estadísticas                            |
 |margen_list      |Salida  |Lista de márgenes de seguridad para estadísticas                           |

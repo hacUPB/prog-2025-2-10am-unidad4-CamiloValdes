@@ -39,18 +39,18 @@ while contr:
                 else:
                     w = float(input("Ingrese el peso: "))
                     s = float(input("Ingrese la superficie alar: "))
-                c = float(input("Ingrese el coeficiente de sustentacion: "))
-                d = float(input("Ingrese la densidad del aire: "))
-                v_stall = (2*w)/(d*s*c)
-                v_stal = pow(v_stall, 0.5)
-                print("calculando procedimiento ", v_stal)
-                print("Ingrese 0 si desea salir o ingrese el valor de la velocidad para continuar")
-                v_actual = float(input("Ingrese el valor de la velocidad: "))
-                margen_seguridad = v_actual - v_stal
+                    c = float(input("Ingrese el coeficiente de sustentacion: "))
+                    d = float(input("Ingrese la densidad del aire: "))
+                    v_stall = (2*w)/(d*s*c)
+                    v_stal = pow(v_stall, 0.5)
+                    print("calculando procedimiento ", v_stal)
+                    print("Ingrese 0 si desea salir o ingrese el valor de la velocidad para continuar")
+                    v_actual = float(input("Ingrese el valor de la velocidad: "))
+                    margen_seguridad = v_actual - v_stal
 
-                resultados.append([v_stal, v_actual, margen_seguridad])
+                    resultados.append([v_stal, v_actual, margen_seguridad])
 
-                conta += 1
+                    conta += 1
                 if v_actual == 0:
                     break
                 if v_actual > v_stal:
@@ -80,7 +80,7 @@ while contr:
                 for key, value in datos.items():
                     print(f"  {key}: {value}")
                 print()
-            print("Puedes usar estos datos en la simulación seleccionando una aeronave.")
+            print("Puede usar estos datos en la simulación seleccionando una aeronave.")
         case "0":
             print("Regresando")
             contr = False
